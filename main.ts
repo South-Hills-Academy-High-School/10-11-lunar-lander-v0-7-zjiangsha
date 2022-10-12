@@ -136,10 +136,10 @@ game.onUpdate(function () {
     }
 })
 game.onUpdate(function () {
-    if (apple.tilemapLocation().column == 27 && apple.vx > 0) {
-        apple.x = 5 * 16
+    if (Math.round(apple.x) == 27.5 * 16 && apple.vx > 0) {
+        apple.x = 5.5 * 16
     }
-    if (apple.tilemapLocation().column == 5 && apple.vx < 0) {
-        apple.x = 28 * 16
+    if (Math.round(apple.x) == 5.5 * 16 && apple.vx < 0) {
+        apple.x = 27 * 16
     }
 })
